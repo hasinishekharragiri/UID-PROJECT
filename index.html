@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeatherNow Pro</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop playsinline id="bgVideo">
+<source src="videos/sunny.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+<div class="stars"></div>
+
+<!-- FULL SCREEN APP -->
+<div class="app">
+
+    <!-- HEADER -->
+    <div class="top">
+        <h1>WeatherNow</h1>
+        <button id="locationBtn">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            Current Location
+        </button>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Search city...">
+        <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <h2 id="dateTime"></h2>
+
+    <img id="weatherIcon"
+        src="https://cdn-icons-png.flaticon.com/512/869/869869.png">
+
+    <h1 id="temperature">30°C</h1>
+    <h2 id="cityName">Hyderabad</h2>
+    <p id="weatherCondition">Sunny</p>
+
+    <!-- DETAILS -->
+    <div class="details-grid">
+
+        <div class="detail-card">
+            <i class="fa-solid fa-water"></i>
+            <h3 id="humidity">45%</h3>
+            <p>Humidity</p>
+        </div>
+
+        <div class="detail-card">
+            <div class="wind-circle">
+                <i class="fa-solid fa-location-arrow"></i>
+            </div>
+            <h3 id="windSpeed">8 km/h</h3>
+            <p>Wind</p>
+        </div>
+
+        <div class="detail-card">
+            <i class="fa-solid fa-gauge-high"></i>
+            <h3 id="pressure">1002 hPa</h3>
+            <p>Pressure</p>
+        </div>
+
+        <div class="detail-card">
+            <i class="fa-solid fa-eye"></i>
+            <h3 id="visibility">5 km</h3>
+            <p>Visibility</p>
+        </div>
+
+        <div class="detail-card">
+            <i class="fa-solid fa-temperature-half"></i>
+            <h3 id="feelsLike">35°C</h3>
+            <p>Feels Like</p>
+        </div>
+
+        <div class="detail-card">
+            <i class="fa-solid fa-sun"></i>
+            <h3 id="sunrise">05:45 AM</h3>
+            <p>Sunrise</p>
+        </div>
+
+        <div class="detail-card">
+            <i class="fa-solid fa-moon"></i>
+            <h3 id="sunset">06:45 PM</h3>
+            <p>Sunset</p>
+        </div>
+
+        <div class="detail-card">
+            <div class="circle-meter">62</div>
+            <h3>AQI</h3>
+            <p>Good</p>
+        </div>
+
+        <div class="detail-card">
+            <div class="uv-meter">7</div>
+            <h3>UV Index</h3>
+            <p>High</p>
+        </div>
+
+    </div>
+
+    <h2 class="forecast-title">5-Day Forecast</h2>
+    <div class="forecast" id="forecastContainer"></div>
+
+    <h2 class="forecast-title">Hourly Forecast</h2>
+    <div class="hourly" id="hourlyContainer"></div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
