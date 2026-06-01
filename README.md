@@ -349,7 +349,7 @@ This project demonstrates:
 
 # 👨‍💻 Author
 
-**Name:** Manaswini
+**Name:** R.Hasini Shekhar - 25146
 **Course:** Bachelor of Technology (B.Tech) – Computer Science and Engineering (CSE)
 **Subject:** User Interface Design (UID)
 **Academic Year:** 2025 – 2026
