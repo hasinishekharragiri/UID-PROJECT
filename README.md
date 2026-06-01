@@ -1,6 +1,6 @@
 # 🌦️ WeatherNow Pro 
- `
-#📌 Overview
+ 
+# 📌 Overview
 
 **WeatherNow Pro** is a modern weather forecasting web application built using **HTML5, CSS3, and JavaScript**. It provides real-time weather updates, current location weather detection, hourly forecasts, 5-day weather forecasts, dynamic weather backgrounds, animated UI effects, and a glassmorphism-inspired design.
 
